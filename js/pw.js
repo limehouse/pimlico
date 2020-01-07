@@ -1,9 +1,8 @@
-const phillip = {
+const me = {
   contact : {
     fname : "Phillip",
     sname : "Webb",
-    voice : "01480 878135",
-    mobile : "07719 123327",
+    phone : "01480 878135",
     email : "phillip@londonbusred.co.uk"
   },
   employment : [
@@ -193,5 +192,27 @@ const phillip = {
     let monthsTotal = monthsCalc + yearsCalc;
 
     return { "years" : Math.floor(monthsTotal / 12), "months" : monthsTotal%12 };
+  },
+  getContact : function()
+  {
+    return this.contact;
   }
+}
+
+
+
+addItem("name", `<div>${me.getContact().fname} ${me.getContact().sname}</div>`);
+addItem("contact", `<div>phone: ${me.getContact().phone}, email: ${me.getContact().email}</div>`);
+me.employment.forEach(addJob);
+
+function addItem(id, val)
+{
+  document.getElementById(id).insertAdjacentHTML("beforeend", val);
+}
+
+function addJob(j)
+{
+  document.getElementById("employment").insertAdjacentHTML("beforeend", `
+    <h4>${j.role}</h4>
+  `);
 }
