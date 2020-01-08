@@ -201,8 +201,9 @@ const me = {
 
 
 
-addItem("name", `<div>${me.getContact().fname} ${me.getContact().sname}</div>`);
-addItem("contact", `<div>phone: ${me.getContact().phone}, email: ${me.getContact().email}</div>`);
+addItem("name", `${me.getContact().fname} ${me.getContact().sname}`);
+addItem("phone", `<span style="font-weight: 700;">&#9743;</span> ${me.getContact().phone}`);
+addItem("email", `<span>&#9993;</span> ${me.getContact().email}`);
 me.employment.forEach(addJob);
 
 function addItem(id, val)
@@ -212,7 +213,11 @@ function addItem(id, val)
 
 function addJob(j)
 {
+  let duration = me.getDuration(j.from, j.to);
   document.getElementById("employment").insertAdjacentHTML("beforeend", `
-    <h4>${j.role}</h4>
+    <div class="job">
+      <h4>${j.role}</h4>
+      <div>${j.employer}<span class="duration">${duration.years} years ${duration.months} months</span></div>
+    </div>
   `);
 }

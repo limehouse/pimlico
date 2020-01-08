@@ -11,28 +11,27 @@ body
 h1
 {
   font-size: 1.5em;
+  margin: 0;
 }
 
 h2
 {
   font-size: 1.25rem;
-}
-
-h1, h2
-{
-  margin: 0;
-  /*padding: 10px 0;*/
+  margin: 0 0 10px 0;
 }
 
 h4
 {
   border-bottom: 1px solid grey;
+  font-size: 1.0rem;
   margin: 0;
 }
 
 article#content
 {
-  border: 1px solid grey;
+  border-top: 1px solid grey;
+  border-right: 1px solid grey;
+  border-bottom: 1px solid grey;
   width: 800px;
   margin: 20px auto;
   background-color: white;
@@ -50,10 +49,38 @@ section#contact
   padding: 12px 15px;
 }
 
+section#contact > div
+{
+  display: inline-block;
+  margin: 8px 8px 0 0;
+}
+
+section#contact > div > span
+{
+  color: #00a1f1;
+  border: 1px solid #00a1f1;
+  border-radius: 25px; 
+  padding: 4px; 
+  text-align: center;
+}
+
 section#employment
 {
   border-left: var(--flash-width) solid #7cbb00;
   padding: 12px 15px;
+}
+
+section#employment .job
+{
+  outline: 1px solid hotpink;
+  margin: 0 0 10px 0;
+  position: relative;
+}
+
+section#employment .job .duration
+{
+  position: absolute;
+  right: 0;
 }
 
 section#education
