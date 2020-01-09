@@ -177,10 +177,19 @@ const me = {
     "November",
     "December"
   ],
-  getMonthString : function(dateFull)
+  getPeriod : function(datePeriod)
   {
-    let i = dateFull.split("-")[1];
-    return this.months[i];
+    var d, v;
+    if (datePeriod == "Present")
+    {
+      v = datePeriod;
+    }
+    else
+    {
+      d = new Date(datePeriod);
+      v = this.months[d.getMonth()] + ", " + d.getFullYear();
+    }
+    return v;
   },
   getDuration : function(dateFrom, dateTo)
   {
@@ -199,13 +208,6 @@ const me = {
   }
 }
 
-
-
-addItem("name", `${me.getContact().fname} ${me.getContact().sname}`);
-addItem("phone", `<span style="font-weight: 700;">&#9743;</span> ${me.getContact().phone}`);
-addItem("email", `<span>&#9993;</span> ${me.getContact().email}`);
-me.employment.forEach(addJob);
-
 function addItem(id, val)
 {
   document.getElementById(id).insertAdjacentHTML("beforeend", val);
@@ -213,11 +215,18 @@ function addItem(id, val)
 
 function addJob(j)
 {
-  let duration = me.getDuration(j.from, j.to);
   document.getElementById("employment").insertAdjacentHTML("beforeend", `
     <div class="job">
       <h4>${j.role}</h4>
-      <div>${j.employer}<span class="duration">${duration.years} years ${duration.months} months</span></div>
-    </div>
+      <div>${j.employer}<span class="fromto">${me.getPeriod(j.from)} &mdash; ${me.getPeriod(j.to)}</span></div>
+      </div>
   `);
 }
+
+/**
+ * Build the page using me elements
+ */
+addItem("name", `${me.getContact().fname} ${me.getContact().sname}`);
+addItem("phone", `phone: ${me.getContact().phone},`);
+addItem("email", `email: ${me.getContact().email}`);
+me.employment.forEach(addJob);
