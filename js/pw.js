@@ -205,6 +205,22 @@ const me = {
   getContact : function()
   {
     return this.contact;
+  },
+  getEmployers : function()
+  {
+    return this.employment;
+  },
+  getEducators : function()
+  {
+    return this.education;
+  },
+  getCourses : function()
+  {
+    
+  },
+  getInterests : function()
+  {
+    return this.interests;
   }
 }
 
@@ -213,20 +229,36 @@ function addItem(id, val)
   document.getElementById(id).insertAdjacentHTML("beforeend", val);
 }
 
-function addJob(j)
-{
-  document.getElementById("employment").insertAdjacentHTML("beforeend", `
-    <div class="job">
-      <h4>${j.role}</h4>
-      <div>${j.employer}<span class="fromto">${me.getPeriod(j.from)} &mdash; ${me.getPeriod(j.to)}</span></div>
-      </div>
-  `);
-}
-
 /**
  * Build the page using me elements
  */
 addItem("name", `${me.getContact().fname} ${me.getContact().sname}`);
 addItem("phone", `phone: ${me.getContact().phone},`);
 addItem("email", `email: ${me.getContact().email}`);
-me.employment.forEach(addJob);
+
+me.getEmployers().forEach(function(j) {
+  addItem("employment", `
+  <div class="job">
+    <h4>${j.role}</h4>
+    <div>${j.employer}<span class="fromto">${me.getPeriod(j.from)} &ndash; ${me.getPeriod(j.to)}</span></div>
+    <div>${j.description}</div>
+    <div><ul><li>${j.bullets.join("</li><li>")}</li></div>
+  </div>`)
+});
+
+me.getEducators().forEach(function(e) {
+  e.courses.forEach(function(n) {
+    console.log(n.name);
+    // map e.courses
+  });
+  addItem("education", `
+  <div class="school">
+    <h4>${e.institute}</h4>
+    <div>${e.location}<span class="fromto">${me.getPeriod(e.from)} &ndash; ${me.getPeriod(e.to)}</span></div>
+    <div>c</div>
+  </div>`)
+});
+
+me.getInterests().forEach(function(i) {
+  addItem("interests", `<p>${i}</p>`);
+});
