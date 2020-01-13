@@ -114,7 +114,7 @@ const me = {
         },
         {
           name : "Adult Numeracy",
-          level : "Level 1"
+          level : "NVQ Level 1"
         }
       ]
     },
@@ -214,10 +214,6 @@ const me = {
   {
     return this.education;
   },
-  getCourses : function()
-  {
-    
-  },
   getInterests : function()
   {
     return this.interests;
@@ -247,15 +243,16 @@ me.getEmployers().forEach(function(j) {
 });
 
 me.getEducators().forEach(function(e) {
-  e.courses.forEach(function(n) {
-    console.log(n.name);
-    // map e.courses
-  });
+  let course = e.courses.map(function(c) { return });
   addItem("education", `
   <div class="school">
     <h4>${e.institute}</h4>
     <div>${e.location}<span class="fromto">${me.getPeriod(e.from)} &ndash; ${me.getPeriod(e.to)}</span></div>
-    <div>c</div>
+    <div>
+      <ul>
+        <li>${e.courses.map(function(c) { return c.name.concat(", ", c.level) }).join("</li><li>")}</li>
+      </ul>
+    </div>
   </div>`)
 });
 
