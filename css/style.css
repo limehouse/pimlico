@@ -19,7 +19,7 @@ h1
 {
   font-size: 2.0em;
   margin: 0;
-  text-shadow: 0.6px 0 black;
+  text-shadow: 0.6px 0 currentColor;
 }
 
 h2
