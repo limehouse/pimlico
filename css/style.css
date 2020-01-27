@@ -3,16 +3,23 @@
   --flash-width: 8px;
 }
 
+@font-face
+{
+  font-family: 'Bloomberg Prop Unicode C';
+  src: url('/fonts/Bloomberg-PropU.ttf');
+}
+
 body
 {
   background-color: darkgrey;
-  font-family: 'Fira Sans';
+  font-family: 'Bloomberg Prop Unicode C', sans-serif;
 }
 
 h1
 {
   font-size: 2.0em;
   margin: 0;
+  text-shadow: 0.6px 0 black;
 }
 
 h2
@@ -20,6 +27,7 @@ h2
   font-size: 1.25rem;
   margin: 0 0 10px 0;
   text-transform: uppercase;
+  letter-spacing: 0.5px;
   /* transform: rotate(270deg);
   width: 180px;
   height: 24px;
@@ -27,12 +35,11 @@ h2
   left: -104px;
   top: 86px;
   text-align: right; */
-  letter-spacing: 1px;
 }
 
 h4
 {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid #9a9aa9;
   font-size: 1.0rem;
   margin: 0 0 3px 0;
   position: relative;
@@ -118,6 +125,11 @@ section#education
 {
   border-left: var(--flash-width) solid #ffbb00;
   padding: 12px 15px;
+}
+
+section#education .school ul li span.level
+{
+  font-style: italic;
 }
 
 section#interests

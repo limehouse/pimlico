@@ -217,10 +217,10 @@ function getMonthName(m)
 
 function getDuration(dateFrom, dateTo)
 {
-  let from = new Date(dateFrom);
+  let from = new Date(dateFrom); // create date object
   let to = (dateTo == "Present") ? new Date() : new Date(dateTo); // use today's date if to is 'Present'
   
-  let monthsCalc = to.getMonth() - from.getMonth();
+  let monthsCalc = to.getMonth() - from.getMonth(); // calculate months between
   let yearsCalc = (12 * (to.getFullYear() - from.getFullYear()));
   let monthsTotal = monthsCalc + yearsCalc;
   
@@ -250,7 +250,7 @@ me.getEducators().forEach(e => addItem("education", `
     <h4>${e.institute}</h4>
     <div>${e.location}<span class="fromto">${getPeriod(e.from)} &ndash; ${getPeriod(e.to)}</span></div>
     <ul>
-      <li>${e.courses.map(c => c.name + (c.level.length > 0 ? ", " : "") + c.level).join("</li><li>")}</li>
+      <li>${e.courses.map(c => c.name + (c.level.length > 0 ? `, <span class="level">${c.level}</span>` : "")).join("</li><li>")}</li>
     </ul>
   </div>
 `));
