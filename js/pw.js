@@ -79,6 +79,7 @@ const me = {
       location : "Milton Keynes, Buckinghamshire",
       from : "2014-02",
       to : "Present",
+      display : "list",
       courses : [
         {
           name : "My Digital Life (TU100)",
@@ -103,6 +104,7 @@ const me = {
       location : "Peterborough, Cambridgeshire",
       from : "1999-09",
       to : "2003",
+      display : "list",
       courses : [
         {
           name : "Information & Communication Technology",
@@ -123,21 +125,14 @@ const me = {
       location : "St. Neots, Cambridgeshire",
       from : "1993-09",
       to : "1998",
+      display : "csv",
       courses : [
         {
-          name : "English Language",
+          name : "English",
           level : "GCSE"
         },
         {
-          name : "English Literature",
-          level : "GCSE"
-        },
-        {
-          name : "English Speaking & Listening",
-          level : "GCSE"
-        },
-        {
-          name : "Integrated Humanities",
+          name : "Humanities",
           level : "GCSE"
         },
         {
@@ -149,7 +144,7 @@ const me = {
           level : "GCSE"
         },
         {
-          name : "Science, Double Award",
+          name : "Science",
           level : "GCSE"
         },
         {
@@ -163,45 +158,6 @@ const me = {
     "For the past 17 years I have regularly played inline hockey with a local skating club. As a member of the club committee I am responsible for providing email and web hosting services and maintenance of email distribution lists. Players have access to an online RSVP system, which I developed using PHP and MySQL. I am also responsible for the maintenance of this system.",
     "I have a broad interest in IT related fields and take particular interest in IT security and Linux related news."
   ],
-  months : [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December"
-  ],
-  getPeriod : function(datePeriod)
-  {
-    var d, v;
-    if (datePeriod == "Present")
-    {
-      v = datePeriod;
-    }
-    else
-    {
-      d = new Date(datePeriod);
-      v = this.months[d.getMonth()] + ", " + d.getFullYear();
-    }
-    return v;
-  },
-  getDuration : function(dateFrom, dateTo)
-  {
-    let from = new Date(dateFrom);
-    let to = (dateTo == "Present") ? new Date() : new Date(dateTo); // use today's date if to is 'Present'
-
-    let monthsCalc = to.getMonth() - from.getMonth();
-    let yearsCalc = (12 * (to.getFullYear() - from.getFullYear()));
-    let monthsTotal = monthsCalc + yearsCalc;
-
-    return { "years" : Math.floor(monthsTotal / 12), "months" : monthsTotal%12 };
-  },
   getContact : function()
   {
     return this.contact;
@@ -225,37 +181,80 @@ function addItem(id, val)
   document.getElementById(id).insertAdjacentHTML("beforeend", val);
 }
 
+function getPeriod(datePeriod)
+{
+  let d, v;
+  if (datePeriod == "Present")
+  {
+    v = datePeriod;
+  }
+  else
+  {
+    d = new Date(datePeriod);
+    v = getMonthName(d.getMonth()) + ", " + d.getFullYear();
+  }
+  return v;
+}
+
+function getMonthName(m)
+{
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December"
+  ];
+  return months[m];
+}
+
+function getDuration(dateFrom, dateTo)
+{
+  let from = new Date(dateFrom);
+  let to = (dateTo == "Present") ? new Date() : new Date(dateTo); // use today's date if to is 'Present'
+  
+  let monthsCalc = to.getMonth() - from.getMonth();
+  let yearsCalc = (12 * (to.getFullYear() - from.getFullYear()));
+  let monthsTotal = monthsCalc + yearsCalc;
+  
+  return { "years" : Math.floor(monthsTotal / 12), "months" : monthsTotal%12 };
+}
+
 /**
- * Build the page using me elements
+ * Build the page
  */
 addItem("name", `${me.getContact().fname} ${me.getContact().sname}`);
 addItem("phone", `phone: ${me.getContact().phone},`);
 addItem("email", `email: ${me.getContact().email}`);
 
-me.getEmployers().forEach(function(j) {
-  addItem("employment", `
+me.getEmployers().forEach(j => addItem("employment", `
   <div class="job">
     <h4>${j.role}</h4>
-    <div>${j.employer}<span class="fromto">${me.getPeriod(j.from)} &ndash; ${me.getPeriod(j.to)}</span></div>
+    <div>${j.employer}<span class="fromto">${getPeriod(j.from)} &ndash; ${getPeriod(j.to)}</span></div>
     <div>${j.description}</div>
-    <div><ul><li>${j.bullets.join("</li><li>")}</li></div>
-  </div>`)
-});
+    <ul>
+      <li>${j.bullets.join("</li><li>")}</li>
+    </li>
+  </div>
+`));
 
-me.getEducators().forEach(function(e) {
-  let course = e.courses.map(function(c) { return });
-  addItem("education", `
+me.getEducators().forEach(e => addItem("education", `
   <div class="school">
     <h4>${e.institute}</h4>
-    <div>${e.location}<span class="fromto">${me.getPeriod(e.from)} &ndash; ${me.getPeriod(e.to)}</span></div>
-    <div>
-      <ul>
-        <li>${e.courses.map(function(c) { return c.name.concat(", ", c.level) }).join("</li><li>")}</li>
-      </ul>
-    </div>
-  </div>`)
-});
+    <div>${e.location}<span class="fromto">${getPeriod(e.from)} &ndash; ${getPeriod(e.to)}</span></div>
+    <ul>
+      <li>${e.courses.map(c => c.name + (c.level.length > 0 ? ", " : "") + c.level).join("</li><li>")}</li>
+    </ul>
+  </div>
+`));
 
-me.getInterests().forEach(function(i) {
-  addItem("interests", `<p>${i}</p>`);
-});
+me.getInterests().forEach(i => addItem("interests", `
+  <p>${i}</p>
+`));

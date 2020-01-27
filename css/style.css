@@ -1,12 +1,12 @@
 :root
 {
-  --flash-width: 30px;
+  --flash-width: 8px;
 }
 
 body
 {
   background-color: darkgrey;
-  font-family: serif;
+  font-family: 'Fira Sans';
 }
 
 h1
@@ -20,13 +20,13 @@ h2
   font-size: 1.25rem;
   margin: 0 0 10px 0;
   text-transform: uppercase;
-  transform: rotate(270deg);
+  /* transform: rotate(270deg);
   width: 180px;
   height: 24px;
   position: absolute;
   left: -104px;
   top: 86px;
-  text-align: right;
+  text-align: right; */
   letter-spacing: 1px;
 }
 
