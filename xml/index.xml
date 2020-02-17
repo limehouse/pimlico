@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="index.xslt"?>
+<?xml-stylesheet type="text/css" href="computer.css"?>
+<cv>
+  <contact name="Phillip Webb" email="pwebb@example.com" link="https://github.com/limehouse"/>
+  <employment>
+    <employer name="Assured Information Systems Limited" role="Software Support Analyst">
+      <date from="2013-11" to="Present"/>
+      <role description="I did xyz">
+        <bullet text="a"/>
+        <bullet text="b"/>
+        <bullet text="c"/>
+        <bullet text="d"/>
+      </role>
+    </employer>
+    <!-- <employer>
+      <name>Tensor plc</name>
+      <role>Helpdesk Analyst</role>
+      <from>2010-02</from>
+      <to>2013-10</to>
+      <description>
+        I did xyz
+      </description>
+      <bullets>
+        <bullet>a</bullet>
+        <bullet>b</bullet>
+        <bullet>c</bullet>
+        <bullet>d</bullet>
+      </bullets>
+    </employer>
+    <employer>
+      <name>NHS Anglia Support Partnership</name>
+      <role>Service Desk Analyst</role>
+      <from>2010-02</from>
+      <to>2010-07</to>
+      <description>
+        I did xyz
+      </description>
+      <bullets>
+        <bullet>a</bullet>
+        <bullet>b</bullet>
+        <bullet>c</bullet>
+        <bullet>d</bullet>
+      </bullets>
+    </employer> -->
+  </employment>
+  <education>
+    <institute name="The Open University" location="Milton Keynes, Buckinghamshire">
+      <date from="2014-02" to="Present" />
+      <courses display="csv">
+        <course name="English" level="GCSE"/>
+        <course name="Mathematics" level="GCSE"/>
+      </courses>
+    </institute>
+    <!-- <institute>
+      <name>Peterborough Regional College</name>
+      <location>Peterborough, Cambridgeshire</location>
+      <from>1999-09</from>
+      <to>2003</to>
+      <courses display="csv">
+        <course name="English" level="GCSE"/>
+        <course name="Mathematics" level="GCSE"/>
+      </courses>
+    </institute>
+    <institute>
+      <name>Ernulf Community School</name>
+      <location>St. Neots, Cambridgeshire</location>
+      <from>1993-09</from>
+      <to>1998</to>
+      <courses display="list">
+        <course name="English" level="GCSE"/>
+        <course name="Mathematics" level="GCSE"/>
+      </courses>
+    </institute> -->
+  </education>
+</cv>
