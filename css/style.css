@@ -1,31 +1,65 @@
 :root
 {
-  --flash-width: 8px;
+  --flash-width: 10px;
 }
 
 @font-face
 {
-  font-family: 'Bloomberg Prop Unicode C';
-  src: url('/fonts/Bloomberg-PropU.ttf');
+  font-family: 'Amazon Ember';
+  src: url('../assets/fonts/AmazonEmberDisplay_W_Lt.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'Amazon Ember';
+  src: url('../assets/fonts/AmazonEmberDisplay_W_Rg.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'Amazon Ember';
+  src: url('../assets/fonts/AmazonEmberDisplay_W_Md.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'Amazon Ember';
+  src: url('../assets/fonts/AmazonEmberDisplay_W_Bd.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face
+{
+  font-family: 'Amazon Ember';
+  src: url('../assets/fonts/AmazonEmberDisplay_W_He.woff2') format('woff2');
+  font-weight: 800;
+  font-style: normal;
 }
 
 body
 {
   background-color: darkgrey;
-  font-family: 'Bloomberg Prop Unicode C', sans-serif;
+  font-family: 'Amazon Ember', sans-serif;
 }
 
 h1
 {
   font-size: 2.0em;
-  margin: 0;
+  margin: 20px 0 0 0;
   text-shadow: 0.6px 0 currentColor;
 }
 
 h2
 {
   font-size: 1.25rem;
-  margin: 0 0 10px 0;
+  margin: 20px 0;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   /* transform: rotate(270deg);
@@ -35,6 +69,11 @@ h2
   left: -104px;
   top: 86px;
   text-align: right; */
+}
+
+h2 i
+{
+  margin-right: 8px;
 }
 
 h4
@@ -51,6 +90,21 @@ p
   margin: 0 0 20px 0;
 }
 
+a
+{
+  text-decoration: none;
+}
+
+a:hover
+{
+  text-decoration: underline;
+}
+
+a:visited
+{
+  color: initial;
+}
+
 article#content
 {
   width: 800px;
@@ -61,7 +115,7 @@ article#content
 
 section
 {
-  padding: 0px 10px;
+  padding: 2px 15px;
   margin: 0;
   position: relative;
 }
@@ -69,27 +123,34 @@ section
 section#contact
 {
   border-left: var(--flash-width) solid #00a1f1;
-  padding: 12px 15px;
+}
+
+section#contact > h1
+{
+  padding: 0 0 14px 0;
 }
 
 section#contact > div
 {
-  display: inline-block;
+  display: block;
 }
 
 section#contact > div > span
 {
   color: #00a1f1;
   border: 1px solid #00a1f1;
-  border-radius: 25px; 
-  padding: 4px; 
+  border-radius: 25px;
+  padding: 4px;
   text-align: center;
+}
+
+i {
+    width: 24px;
 }
 
 section#employment
 {
   border-left: var(--flash-width) solid #7cbb00;
-  padding: 12px 15px;
 }
 
 section#employment .job > div,
@@ -122,7 +183,6 @@ section#employment .job .duration
 section#education
 {
   border-left: var(--flash-width) solid #ffbb00;
-  padding: 12px 15px;
 }
 
 section#education .school ul li span.level
@@ -133,5 +193,4 @@ section#education .school ul li span.level
 section#interests
 {
   border-left: var(--flash-width) solid #f65314;
-  padding: 12px 15px;
 }
