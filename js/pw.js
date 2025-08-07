@@ -8,28 +8,8 @@ const me = {
       url: "https://www.linkedin.com/in/iamphillipwebb", text: "iamphillipwebb"
     },
     about : [
-      "A self-taught developer who started with HTML, PHP and MySQL.  Currently exploring Vue.JS, I am keen to learn new languages that I can use in personal and professional projects, with previous experience using Golang, Java and AutoIt3.",
+      "A self-taught developer who started with HTML, PHP and MySQL.  Currently exploring Vue.JS, Cloudflare Workers KV and D1, I am keen to learn new languages that I can use in personal and professional projects, with previous experience using Golang, Java and AutoIt3.",
       
-    ],
-    skills : [
-      "HTML",
-      "CSS",
-      "PHP",
-      "JavaScript",
-      "Java",
-      "Golang",
-      "AutoIt3",
-      "TypeScript",
-      "Oracle",
-      "MySQL",
-      "SQLite",
-      "Microsoft SQL",
-      "DP4",
-      "EPOS",
-      "Pharmacovigilance",
-      "Angular",
-      "Vue.JS",
-      "Spring Boot"
     ]
   },
   employment : [
@@ -39,7 +19,7 @@ const me = {
       from : "2021-11",
       to : "2025-09",
       description : "I am part of a scrum team designing, developing and maintaining a pharmacovigilance web application, using Angular, Java and Oracle database.",
-      skills : ["Oracle", "HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Jenkins", "Solr", "Linux", "SQL", "REST APIs", "Java", "Liquibase", "IntelliJ IDEA", "Scrum", "Git", "Microservices", "Golang", "DevExtreme", "Spring Data JPA"],
+      skills : ["Oracle", "HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Jenkins", "Solr", "Linux", "SQL", "REST APIs", "Java", "Liquibase", "IntelliJ IDEA", "Scrum", "Git", "Microservices", "Golang", "DevExtreme", "Spring Data JPA", "Bash Scripting"],
       bullets : [
         "Developing new API endoints for RESTful microservices using Spring Boot",
         "Communicating progress, and discussion of potential issues in daily standup meetings",
@@ -53,7 +33,7 @@ const me = {
       from : "2013-11",
       to : "2021-11",
       description : "Experienced in managing and supporting a pharmacovigilance database, troubleshooting software issues and providing user support, and ensuring data integrity withing the database.",
-      skills : ["Oracle", "SQL"],
+      skills : ["Oracle", "SQL", "Liquibase", "RemoteApp", "AutoIt3", "PV-Works", "Batch Scripting", "Google Apps Script", "Webhooks"],
       bullets : [
         "Provided technical support and training for users, addressing support tickets promptly",
         "Implemented system and database enhancements to improve functionality",
@@ -68,7 +48,7 @@ const me = {
       from : "2010-07",
       to : "2013-10",
       description : "Application and hardware support for customers using Tensor time and attendance, access control, personnel and energy management systems. Security vetted as non-police personnel by West Midlands Police.",
-      skills : [],
+      skills : ["Microsoft SQL", "MSDE", "SimpleHelp", "Remote Access"],
       bullets : [
         "Microsoft SQL and MSDE database configuration and support",
         "Hardware installation advice given to electrical engineers",
@@ -82,7 +62,7 @@ const me = {
       from : "2010-02",
       to : "2010-07",
       description : "First line service desk role delivering IT and Facilities support to NHS Strategic Health Authority and Primary Care Trust staff across the Anglia region.",
-      skills : [],
+      skills : ["Microsoft Office", "Microsoft Active Directory", "Microsoft Outlook", "Hornbill Service Desk"],
       bullets : [
         "Microsoft Windows Active Directory account administration",
         "Microsoft Exchange 2007 account management via OWA",
@@ -96,7 +76,7 @@ const me = {
       from : "2006-12",
       to : "2010-02",
       description : "Second line support role, including out-of-hours support for retailers in the UK and Europe using Itim end-to-end retail applications.",
-      skills : [],
+      skills : ["EPOS", "EFT", "YesPay", "Microsoft SQL", "DP4", "Remote Access", "VNC"],
       bullets : [
         "EFT and EPoS software and hardware support for shop floor and back office staff",
         "Responsible for EPoS provision and management for new and refitted stores",
@@ -110,7 +90,7 @@ const me = {
       from : "2005-05",
       to : "2006-11",
       description : "IT support role for UK and European customers in small or home office environments. In addition to this role I provided administrative support to Sales staff.",
-      skills : [],
+      skills : ["MacOS X", "Microsoft Windows", "Microsoft Office"],
       bullets : [
         "Provided Microsoft Windows and Office application support to customers",
         "Maintained records of customer requests, incidents and assets",
@@ -229,6 +209,9 @@ const me = {
     }
   ],
   interests : [
+    "I regularly play inline hockey with St. Neots Sharks.  As a member of the club committee I am responsible for provision of email and web hosting services.  Skaters confirm attendance for each session using an online register, which I developed and maintain using PHP, Vue.JS and SQLite/MariaDB",
+    "I have a broad interest in IT, with a focus on IT security and Linux.  As a full-time desktop Linux user, I manage several self-hosted services in my home lab.",
+    "---",
     "For the past 17 years I have regularly played inline hockey with a local skating club. As a member of the club committee I am responsible for providing email and web hosting services and maintenance of email distribution lists. Players have access to an online RSVP system, which I developed using PHP and MySQL. I am also responsible for the maintenance of this system.",
     "I have a broad interest in IT related fields and take particular interest in IT security and Linux related news.",
     "I am a full-time desktop Linux user, and manage several self-hosted services using LXC containers"
