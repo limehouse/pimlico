@@ -211,10 +211,6 @@ const me = {
   interests : [
     "I regularly play inline hockey with St. Neots Sharks.  As a member of the club committee I am responsible for provision of email and web hosting services.  Skaters confirm attendance for each session using an online register, which I developed and maintain using PHP, Vue.JS and SQLite/MariaDB",
     "I have a broad interest in IT, with a focus on IT security and Linux.  As a full-time desktop Linux user, I manage several self-hosted services in my home lab.",
-    "---",
-    "For the past 17 years I have regularly played inline hockey with a local skating club. As a member of the club committee I am responsible for providing email and web hosting services and maintenance of email distribution lists. Players have access to an online RSVP system, which I developed using PHP and MySQL. I am also responsible for the maintenance of this system.",
-    "I have a broad interest in IT related fields and take particular interest in IT security and Linux related news.",
-    "I am a full-time desktop Linux user, and manage several self-hosted services using LXC containers"
   ],
   getContact : function()
   {
