@@ -210,7 +210,7 @@ const me = {
   ],
   interests : [
     "I regularly play inline hockey with St. Neots Sharks.  As a member of the club committee I am responsible for provision of email and web hosting services.  Skaters confirm attendance for each session using an online register, which I developed and maintain using PHP, Vue.JS and SQLite/MariaDB",
-    "I have a broad interest in IT, with a focus on IT security and Linux.  As a full-time desktop Linux user, I manage several self-hosted services in my home lab.",
+    "I am passionate about information technology, with emphasis on on cybersecurity and open-source operating systems.  As a Linux enthusiast, I actively maintain a home lab comprising several selfhosted services, which help me develop my computing knowledge."
   ],
   getContact : function()
   {
