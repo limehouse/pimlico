@@ -8,8 +8,7 @@ const me = {
       url: "https://www.linkedin.com/in/iamphillipwebb", text: "iamphillipwebb"
     },
     about : [
-      "A self-taught developer who started with HTML, PHP and MySQL.  Currently exploring Vue.JS, Cloudflare Workers KV and D1, I am keen to learn new languages that I can use in personal and professional projects, with previous experience using Golang, Java and AutoIt3.",
-      
+      "A developer with strong foundation in HTML, PHP and MySQL.  Currently exploring Vue.JS, Cloudflare Workers KV and D1.  I am interested in learning new languages and technologies for personal and professional projects, with previous experience using Golang, Java and Google Apps Script.",
     ]
   },
   employment : [
@@ -17,7 +16,7 @@ const me = {
       employer : "Ennov, St. Neots",
       role : "Development Engineer",
       from : "2021-11",
-      to : "2025-09",
+      to : "Present",
       description : "I am part of a scrum team designing, developing and maintaining a pharmacovigilance web application, using Angular, Java and Oracle database.",
       skills : ["Oracle", "HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Jenkins", "Solr", "Linux", "SQL", "REST APIs", "Java", "Liquibase", "IntelliJ IDEA", "Scrum", "Git", "Microservices", "Golang", "DevExtreme", "Spring Data JPA", "Bash Scripting"],
       bullets : [
@@ -28,7 +27,7 @@ const me = {
       ]
     },
     {
-      employer : "Assured Information Systems, St. Neots",
+      employer : "Ennov, St. Neots",
       role : "Software Support Analyst",
       from : "2013-11",
       to : "2021-11",
