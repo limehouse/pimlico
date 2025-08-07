@@ -4,7 +4,7 @@ const me = {
     surname : "Webb",
     phone : "07719 123327",
     email : "phillip.webb@nntp.uk",
-    url : "https://www.linkedin.com/in/iamphillipwebb",
+    link : {url: "https://www.linkedin.com/in/iamphillipwebb", text: "iamphillipwebb"},
     about : [
       "A self-taught developer who started with HTML, PHP and MySQL.  Currently exploring Vue.JS, I am keen to learn new languages that I can use in personal and professional projects, with previous experience using Golang, Java and AutoIt3.",
       
@@ -251,7 +251,11 @@ const me = {
 
 function addItem(id, val)
 {
-  if (id === "url") val = `<a href="${val}" target="_blank">${val}</a>`;
+  if (id === "link") {
+    let link = JSON.parse(val)
+    val = `<a href="${link.url}" target="_blank">${link.text}</a>`;
+  }
+  
   document.getElementById(id).insertAdjacentHTML("beforeend", val);
 }
 
@@ -307,7 +311,7 @@ function getDuration(dateFrom, dateTo)
 addItem("name", `${me.getContact().firstname} ${me.getContact().surname}`);
 addItem("phone", `${me.getContact().phone}`);
 addItem("email", `${me.getContact().email}`);
-addItem("url", `${me.getContact().url}`);
+addItem("link", `${JSON.stringify(me.getContact().link)}`);
 
 me.getEmployers().forEach(j => addItem("employment", `
   <div class="job">
