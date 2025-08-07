@@ -53,7 +53,7 @@ const me = {
       from : "2013-11",
       to : "2021-11",
       description : "Experienced in managing and supporting a pharmacovigilance database, troubleshooting software issues and providing user support, and ensuring data integrity withing the database.",
-      skills : [],
+      skills : ["Oracle", "SQL"],
       bullets : [
         "Provided technical support and training for users, addressing support tickets promptly",
         "Implemented system and database enhancements to improve functionality",
