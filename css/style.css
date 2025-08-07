@@ -194,3 +194,22 @@ section#interests
 {
   border-left: var(--flash-width) solid #f65314;
 }
+
+@media print {
+      body {
+        background-color: white;
+        margin: 0;
+        padding: 0;
+      }
+      article#content {
+        box-shadow: none;
+        margin: 0;
+        padding: 0;
+      }
+      section#employment,
+      section#contact,
+      section#education,
+      section#interests {
+        border: none;
+      }
+    }
