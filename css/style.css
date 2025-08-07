@@ -212,4 +212,7 @@ section#interests
       section#interests {
         border: none;
       }
+      .print-button {
+        display: none;
+      }
     }
