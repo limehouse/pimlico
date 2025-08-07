@@ -342,5 +342,3 @@ me.getInterests().forEach(i => addItem("interests", `
 me.getContact().about.forEach(i => addItem("contact", `
   <p>${i}</p>
   `));
-
-// addItem("contact", me.getContact().skills.sort().join(", "))
