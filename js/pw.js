@@ -4,7 +4,9 @@ const me = {
     surname : "Webb",
     phone : "07719 123327",
     email : "phillip.webb@nntp.uk",
-    link : {url: "https://www.linkedin.com/in/iamphillipwebb", text: "iamphillipwebb"},
+    link : {
+      url: "https://www.linkedin.com/in/iamphillipwebb", text: "iamphillipwebb"
+    },
     about : [
       "A self-taught developer who started with HTML, PHP and MySQL.  Currently exploring Vue.JS, I am keen to learn new languages that I can use in personal and professional projects, with previous experience using Golang, Java and AutoIt3.",
       
