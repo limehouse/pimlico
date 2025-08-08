@@ -107,6 +107,7 @@ a:visited
 
 article#content
 {
+  position: relative;
   width: 800px;
   margin: 20px auto;
   background-color: white;
