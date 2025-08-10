@@ -18,12 +18,13 @@ const me = {
       from : "2021-11",
       to : "Present",
       description : "I am part of a scrum team designing, developing and maintaining a pharmacovigilance web application, using Angular, Java and Oracle database.",
-      skills : ["Oracle", "HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Jenkins", "Solr", "Linux", "SQL", "REST APIs", "Java", "Liquibase", "IntelliJ IDEA", "Scrum", "Git", "Microservices", "Golang", "DevExtreme", "Spring Data JPA", "Bash Scripting"],
+      skills : ["Oracle", "HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Jenkins", "Solr", "Linux", "SQL", "REST APIs", "Java", "Liquibase", "IntelliJ IDEA", "Scrum", "Git", "Microservices", "Golang", "DevExtreme", "Spring Data JPA", "Bash Scripting", "Jasmine"],
       bullets : [
         "Developing API endoints for RESTful microservices using Spring Boot",
         "Communicating progress, and discussion of potential issues in daily standup meetings",
         "Creating and maintaining Angular front-end functionality",
         "Maintaining deployment pipelines using Jenkins",
+        "Proficient in Jasmine for behaviour-driven development (BDD) testing of JavaScript applications"
       ]
     },
     {
