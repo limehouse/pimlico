@@ -24,7 +24,7 @@ const me = {
         "Communicating progress, and discussion of potential issues in daily standup meetings",
         "Creating and maintaining Angular front-end functionality",
         "Maintaining deployment pipelines using Jenkins",
-        "Proficient in Jasmine for behaviour-driven development (BDD) testing of JavaScript applications"
+        "Proficient in Jasmine for testing of JavaScript applications"
       ]
     },
     {
