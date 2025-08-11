@@ -32,7 +32,7 @@ const me = {
       role : "Software Support Analyst",
       from : "2013-11",
       to : "2021-11",
-      description : "Experienced in managing and supporting a pharmacovigilance database, troubleshooting software issues and providing user support, and ensuring data integrity withing the database.",
+      description : "Experienced in managing and supporting a pharmacovigilance database, troubleshooting software issues, providing user support, and ensuring data integrity.",
       skills : ["Oracle", "SQL", "Liquibase", "RemoteApp", "AutoIt3", "PV-Works", "Batch Scripting", "Google Apps Script", "Webhooks"],
       bullets : [
         "Provided technical support and training for users, addressing support tickets promptly",
@@ -117,10 +117,10 @@ const me = {
       role : "Hardware Technician",
       from : "2003-07",
       to : "2004-06",
-      description : "IT recycling technician with hands-on experience in managing the lifecycle of decimmissioned electronic equipment.",
+      description : "IT recycling technician with hands-on experience in managing the lifecycle of decommissioned electronic equipment.",
       skills : [],
       bullets : [
-        "Effienciently processed pallets of printers, monitors, desktop and notebook computers",
+        "Efficiently processed pallets of printers, monitors, desktop and notebook computers",
         "Destroyed data to ensure compliance with data protection regulations",
         "Cleaned and refurbished devices to meet quality standards for resale",
         "Imaged devices and prepared them for onsite, and online auction sales"
@@ -210,7 +210,7 @@ const me = {
   ],
   interests : [
     "I regularly play inline hockey with St. Neots Sharks.  As a member of the club committee I am responsible for provision of email and web hosting services.  Skaters confirm attendance for each session using an online register, which I developed and maintain using PHP, Vue.JS and SQLite/MariaDB",
-    "I am passionate about information technology, with emphasis on on cybersecurity and open-source operating systems.  As a Linux enthusiast, I actively maintain a home lab comprising several selfhosted services, which help me develop my computing knowledge."
+    "I am passionate about information technology, with emphasis on on cybersecurity and open-source operating systems.  As a Linux enthusiast, I actively maintain a home lab comprising several self-hosted services, which help me develop my computing knowledge."
   ],
   getContact : function()
   {
