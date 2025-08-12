@@ -24,6 +24,7 @@ const me = {
         "Communicating progress, and discussion of potential issues in daily standup meetings",
         "Creating and maintaining Angular front-end functionality",
         "Maintaining deployment pipelines using Jenkins",
+        "Conducting peer code reviews to ensure best practices and acceptance criteria are met",
         "Proficient in Jasmine for testing JavaScript applications"
       ]
     },
