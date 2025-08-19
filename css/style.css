@@ -196,6 +196,18 @@ section#interests
   border-left: var(--flash-width) solid #f65314;
 }
 
+#development
+{
+  display: none;
+  background-color: red;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: bold;
+
+}
+
 @media print {
       body {
         background-color: white;

@@ -324,3 +324,10 @@ me.getInterests().forEach(i => addItem("interests", `
 me.getContact().about.forEach(i => addItem("contact", `
   <p>${i}</p>
   `));
+
+document.addEventListener('DOMContentLoaded', function() {
+  const developmentBanner = document.getElementById('development');
+  if (window.location.hostname === "127.0.0.1") {
+    developmentBanner.style.display = 'block';
+  }
+});
