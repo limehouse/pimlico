@@ -17,15 +17,14 @@ const me = {
       role : "Development Engineer",
       from : "2021-11",
       to : "Present",
-      description : "I am part of a scrum team designing, developing and maintaining a pharmacovigilance web application, using Angular, Java and Oracle database.",
+      description : "Part of a Scrum team developing a pharmacovigilance web application (Angular, Java, Oracle); building search and administrative features for user access, reporting and product management.",
       skills : ["Oracle", "HTML", "CSS", "JavaScript", "TypeScript", "Angular", "Jenkins", "Solr", "Linux", "SQL", "REST APIs", "Java", "Liquibase", "IntelliJ IDEA", "Scrum", "Git", "Microservices", "Golang", "DevExtreme", "Spring Data JPA", "Bash Scripting", "Jasmine", "Redmine"],
       bullets : [
-        "Developing API endpoints for RESTful microservices using Spring Boot",
-        "Communicating progress, and discussion of potential issues in daily standup meetings",
-        "Creating and maintaining Angular front-end functionality",
-        "Maintaining deployment pipelines using Jenkins",
-        "Conducting peer code reviews to ensure best practices and acceptance criteria are met",
-        "Proficient in Jasmine for testing JavaScript applications"
+        "Implementing security enhancements to prevent unauthorised API data access",
+        "Optimising data export capabilities with Apache POI for efficient data handling",
+        "Architecting Spring Boot microservices with scalable API endpoints",
+        "Managing Jenkins deployment pipelines and conducting peer code reviews",
+        "Implementing Jasmine unit tests to ensure JavaScript application reliability",
       ]
     },
     {
@@ -34,13 +33,13 @@ const me = {
       from : "2013-11",
       to : "2021-11",
       description : "Experienced in managing and supporting a pharmacovigilance database, troubleshooting software issues, providing user support, and ensuring data integrity.",
-      skills : ["Oracle", "SQL", "Liquibase", "RemoteApp", "AutoIt3", "PV-Works", "Batch Scripting", "Google Apps Script", "Webhooks"],
+      skills : ["Oracle", "SQL", "Liquibase", "RemoteApp", "AutoIt3", "PV-Works", "Batch Scripting", "Google Apps Script", "Webhooks", "XML", "XSLT"],
       bullets : [
-        "Provided technical support and training for users, addressing support tickets promptly",
-        "Implemented system and database enhancements to improve functionality",
-        "Produced monthly issue reports for customers",
-        "Designed, developed and maintained C# .NET utilities for internal use by the support team",
-        "Developed a web interface to help customers troubleshoot connectivity issues with our services"
+        "Delivered technical support and user training, efficiently resolving support tickets",
+        "Implemented system and database enhancements to improve functionality and performance",
+        "Generated monthly issue reports for custom insights and tracking",
+        "Developed C# .NET utilities to streamline internal support team workflows",
+        "Created a web-based troubleshooting interface for customer connectivity diagnostics"
       ]
     },
     {
@@ -52,8 +51,8 @@ const me = {
       skills : ["Microsoft SQL", "MSDE", "SimpleHelp", "Remote Access"],
       bullets : [
         "Microsoft SQL and MSDE database configuration and support",
-        "Hardware installation advice given to electrical engineers",
-        "Firmware and software upgrades performed using remote access tools",
+        "Technical hardware installation guidance given to electrical engineers",
+        "Firmware and software upgrades executed using remote access tools",
         "Application server migration and software installation support"
       ]
     },
@@ -67,7 +66,7 @@ const me = {
       bullets : [
         "Microsoft Windows Active Directory account administration",
         "Microsoft Exchange 2007 account management via OWA",
-        "NHS Trust IT and email policy enforcement",
+        "Enforcing NHS Trust IT and email policies",
         "Microsoft Office 2003/2007 application support"
       ]
     },
@@ -79,9 +78,9 @@ const me = {
       description : "Second line support role, including out-of-hours support for retailers in the UK and Europe using Itim end-to-end retail applications.",
       skills : ["EPOS", "EFT", "YesPay", "Microsoft SQL", "DP4", "Remote Access", "VNC"],
       bullets : [
-        "EFT and EPoS software and hardware support for shop floor and back office staff",
+        "EFT and EPoS software and hardware support for shop floor and back office teams",
         "Responsible for EPoS provision and management for new and refitted stores",
-        "Incident resolution using remote access applications",
+        "Resolved support requests using remote access applications",
         "Microsoft SQL and DP4 database management"
       ]
     },
@@ -124,7 +123,7 @@ const me = {
         "Efficiently processed pallets of printers, monitors, desktop and notebook computers",
         "Destroyed data to ensure compliance with data protection regulations",
         "Cleaned and refurbished devices to meet quality standards for resale",
-        "Imaged devices and prepared them for onsite, and online auction sales"
+        "Imaged devices in preparation for onsite, and online auction sales"
       ]
     }
   ],
